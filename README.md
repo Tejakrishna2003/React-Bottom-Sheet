@@ -32,10 +32,7 @@ This project demonstrates proficiency in **React Hooks**, custom animations, res
 Before you begin, ensure you have the following installed:
 
 * **Node.js**: Version 14 or higher (LTS recommended).
-* **npm**: Version 6 or higher (included with Node.js) or `yarn`.
-* **Git**: For cloning the repository.
-* A modern web browser (e.g., Chrome, Firefox, Safari).
-
+* **npm**: Version 6 or higher (included with Node.js).
 ---
 
 ## Installation
@@ -44,15 +41,13 @@ To set up and run the project locally, follow these steps:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/Tejakrishna2003/React-Bottom-Sheet.git
     cd react-bottom-sheet
     ```
 
 2.  **Install Dependencies**:
     ```bash
     npm install
-    # Or with yarn:
-    # yarn install
     ```
 
 3.  **Configure Tailwind CSS**: Initialize Tailwind CSS if not already present:
@@ -71,19 +66,8 @@ To set up and run the project locally, follow these steps:
 4.  **Start the Development Server**:
     ```bash
     npm run dev
-    # Or with yarn:
-    # yarn dev
     ```
     Open `http://localhost:5173` in your browser (port may vary; check console output).
-
-5.  **Build for Production (Optional)**:
-    ```bash
-    npm run build
-    ```
-    Preview the build:
-    ```bash
-    npm run preview
-    ```
 
 ---
 
@@ -94,7 +78,6 @@ To set up and run the project locally, follow these steps:
 * **Keyboard Navigation**: Tab to the bottom sheet and use **Arrow Up** or **Arrow Down** keys to switch between snap points.
 * **Responsive Behavior**: The bottom sheet is centered on larger screens (max-width 672px) and full-width on mobile. The content area is scrollable when fully open.
 
----
 ---
 
 ## Technical Implementation
@@ -112,31 +95,3 @@ To set up and run the project locally, follow these steps:
 
 ---
 
-## Meeting Assignment Criteria
-
-The project addresses the evaluation criteria as follows:
-
-* **Implementation of Bottom Sheet with Snap Points**: Three snap points (closed, half, open) are fully functional, with smooth transitions between them.
-* **Smooth Spring Motion Animations**: Custom spring animations provide fluid, physics-based transitions without third-party libraries.
-* **User Interface and Experience**: Clean, intuitive UI with drag handle, buttons, and keyboard support, styled with Tailwind CSS for a professional look.
-* **Code Quality and Structure**: Modular design with a single `BottomSheet` component, clear state management, and organized project structure using Vite.
-* **Responsiveness and Compatibility**: Responsive across desktop and mobile, tested for cross-browser compatibility (Chrome, Firefox, Safari).
-* **Optional Features**:
-    * Keyboard accessibility for enhanced usability.
-    * Scrollable content area for handling overflow.
-    * Custom animations showcasing technical proficiency.
-
----
-
-## Troubleshooting
-
-* **Port Conflict**: If `localhost:5173` is unavailable, check the console for an alternative port assigned by Vite.
-* **Tailwind CSS Issues**: Ensure `tailwind.config.js` includes correct content paths and `index.css` has Tailwind directives (`@tailwind base; @tailwind components; @tailwind utilities;`).
-* **Drag Not Working on Mobile**: Verify `touchAction: 'none'` is applied to the bottom sheet to prevent browser scrolling interference.
-* **Animation Lag**: Ensure no conflicting scripts block `requestAnimationFrame`. Check cleanup in `useEffect` with `cancelAnimationFrame`.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
