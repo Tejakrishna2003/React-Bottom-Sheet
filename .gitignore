@@ -1,0 +1,60 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Compiled output
+dist
+build
+.vite/ # Vite's build cache and temporary files
+
+# Dependencies
+node_modules/
+
+# IDEs and Editors
+.idea/          # JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.vscode/        # Visual Studio Code
+*.iml           # IntelliJ IDEA module files
+.DS_Store       # macOS specific files
+Thumbs.db       # Windows thumbnail cache
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Local development and build artifacts
+*.local
+coverage/       # Jest/Vite test coverage reports
+.rollup.cache   # Rollup cache if used explicitly
+.parcel-cache   # Parcel cache if used
+
+# npm/yarn/pnpm
+.npm
+.yarn-integrity
+.yarn-cache
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# SvelteKit, Next.js, Nuxt.js specific (if applicable, remove if not)
+.svelte-kit/
+.next/
+.nuxt/
+
+# Other temporary files
+*.swp
+*.bak
+*.swo
+
+# Temporary files created by specific build tools or libraries
+# Add any other specific files or folders that are generated during development
+# and should not be committed to version control.
